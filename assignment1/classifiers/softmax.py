@@ -4,7 +4,7 @@ from random import shuffle
 def softmax_loss_naive(W, X, y, reg):
   """
   Softmax loss function, naive implementation (with loops)
-
+    Softmax损失函数的简单实现（循环实现）
   Inputs have dimension D, there are C classes, and we operate on minibatches
   of N examples.
 
@@ -40,7 +40,7 @@ def softmax_loss_naive(W, X, y, reg):
 def softmax_loss_vectorized(W, X, y, reg):
   """
   Softmax loss function, vectorized version.
-
+    Softmax损失函数的向量化实现版本
   Inputs and outputs are the same as softmax_loss_naive.
   """
   # Initialize the loss and gradient to zero.

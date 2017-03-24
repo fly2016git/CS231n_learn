@@ -6,7 +6,7 @@ Created on 2017年3月21日
 '''
 import random
 import numpy as np
-from assignment1.data_utils import load_CIFAR10
+from assignment1.data_utils import load_CIFAR10  
 from  assignment1.classifiers.k_nearest_neighbor import KNearestNeighbor
 import matplotlib.pyplot as plt
 

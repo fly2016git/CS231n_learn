@@ -4,7 +4,7 @@ from random import shuffle
 def svm_loss_naive(W, X, y, reg):
   """
   Structured SVM loss function, naive implementation (with loops).
-
+      结构化SVM损失函数的简单实现（使用循环）
   Inputs have dimension D, there are C classes, and we operate on minibatches
   of N examples.
 
@@ -25,10 +25,10 @@ def svm_loss_naive(W, X, y, reg):
   num_classes = W.shape[1]
   num_train = X.shape[0]
   loss = 0.0
-  for i in xrange(num_train):
+  for i in range(num_train):
     scores = X[i].dot(W)
     correct_class_score = scores[y[i]]
-    for j in xrange(num_classes):
+    for j in range(num_classes):
       if j == y[i]:
         continue
       margin = scores[j] - correct_class_score + 1 # note delta = 1
@@ -58,7 +58,7 @@ def svm_loss_naive(W, X, y, reg):
 def svm_loss_vectorized(W, X, y, reg):
   """
   Structured SVM loss function, vectorized implementation.
-
+    结构化SVM损失函数的向量化实现
   Inputs and outputs are the same as svm_loss_naive.
   """
   loss = 0.0
